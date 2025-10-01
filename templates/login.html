@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="card card-login mt-5">
+    <div class="card-body">
+        <h5 class="card-title">Sign in</h5>
+        <form method="post" action="{{ url_for('login') }}">
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input name="username" class="form-control" required autofocus />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" required />
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Sign in</button>
+            </div>
+        </form>
+        <div class="mt-3 small text-muted">
+            Demo user: <strong>admin</strong> / <strong>Password123</strong>
+        </div>
+    </div>
+</div>
+{% endblock %}

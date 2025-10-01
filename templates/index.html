@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="py-5 text-center">
+    <h1>Welcome to the Project Demo</h1>
+    <p class="lead">Small demo app: login and view a customer table.</p>
+
+    {% if session.get('user') %}
+        <p><a href="{{ url_for('customers') }}" class="btn btn-primary">View Customers</a></p>
+    {% else %}
+        <p><a href="{{ url_for('login') }}" class="btn btn-outline-primary">Login</a></p>
+    {% endif %}
+</div>
+{% endblock %}
