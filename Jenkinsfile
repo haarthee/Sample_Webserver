@@ -18,8 +18,7 @@ pipeline {
 
         stage('Start Flask App') {
             steps {
-                sh 'source venv/bin/activate'
-                sh 'nohup python3 app.py &'
+                sh 'source venv/bin/activate && nohup python3 app.py &'
                 sh 'sleep 5'  // Wait for server to start
             }
         }
