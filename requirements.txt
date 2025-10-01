@@ -1,6 +1,6 @@
-Flask==2.3.4
-Werkzeug==2.3.6
-Jinja2==3.1.2
-itsdangerous==2.1.2
-click==8.2.0
-pytest==7.4.0
+Flask
+Werkzeug
+Jinja2
+itsdangerous
+click
+pytest
