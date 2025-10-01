@@ -25,7 +25,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'source venv/bin/activate && pytest tests/'
+                sh 'source venv/bin/activate && pytest Selenium_pytest_tests/'
             }
         }
 
